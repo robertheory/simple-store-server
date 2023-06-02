@@ -1,0 +1,52 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model State {
+  id   Int    @id @default(autoincrement())
+  name String
+  City City[]
+}
+
+model City {
+  id      Int       @id @default(autoincrement())
+  name    String
+  state   State     @relation(fields: [stateId], references: [id])
+  stateId Int
+  Zipcode Zipcode[]
+}
+
+model Zipcode {
+  code         String    @id @unique
+  street       String
+  neighborhood String
+  city         City      @relation(fields: [cityId], references: [id])
+  cityId       Int
+  Address      Address[]
+}
+
+model Address {
+  id          String     @id @default(uuid())
+  zipcode     Zipcode    @relation(fields: [zipcodeCode], references: [code])
+  complement  String
+  zipcodeCode String
+  Customer    Customer[]
+}
+
+model Customer {
+  id        String   @id @default(uuid())
+  name      String
+  cpf       String   @unique
+  email     String   @unique
+  address   Address? @relation(fields: [addressId], references: [id])
+  addressId String?
+}

@@ -1,0 +1,217 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "simple-store",
+    "dateExported": "2023-06-02T03:18:59.632Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "51fd8b67-2822-4b42-a370-295badfd27e4",
+            "name": "PRODUCTS",
+            "containerId": "",
+            "created": "2023-06-02T00:48:31.658Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "166e1a82-9b5a-4e3d-b534-d4867114f19e",
+            "name": "ORDER",
+            "containerId": "",
+            "created": "2023-06-02T01:52:23.147Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e7cdf525-ece7-4454-bba8-0405e65cdca0",
+            "name": "CUSTOMERS",
+            "containerId": "",
+            "created": "2023-06-02T03:09:47.293Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "9fb1c691-a749-4dee-b0ab-e2881a508f23",
+            "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
+            "containerId": "51fd8b67-2822-4b42-a370-295badfd27e4",
+            "name": "LIST PRODUCTS",
+            "url": "http://localhost:3333/products",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-02T00:38:49.670Z",
+            "modified": "2023-06-02T00:48:35.061Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f283f424-c388-4b3f-8358-89dac6ce8ee9",
+            "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
+            "containerId": "51fd8b67-2822-4b42-a370-295badfd27e4",
+            "name": "CREATE PRODUCT",
+            "url": "http://localhost:3333/product",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-06-02T00:40:06.820Z",
+            "modified": "2023-06-02T00:48:35.877Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Mousepad\",\n  \"price\":21.00\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "601963f0-a3ac-4993-8ea6-7a455b4440cd",
+            "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
+            "containerId": "51fd8b67-2822-4b42-a370-295badfd27e4",
+            "name": "GET PRODUCT",
+            "url": "http://localhost:3333/product/d2fdcc57-6dd6-4209-9ce2-60177c294fd1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-06-02T00:42:29.392Z",
+            "modified": "2023-06-02T00:48:36.546Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1305e37a-adab-4f2c-beb2-82154a04e8ff",
+            "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
+            "containerId": "51fd8b67-2822-4b42-a370-295badfd27e4",
+            "name": "UPDATE PRODUCT",
+            "url": "http://localhost:3333/product/d2fdcc57-6dd6-4209-9ce2-60177c294fd1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-06-02T00:46:48.944Z",
+            "modified": "2023-06-02T00:48:37.516Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Mousepad 2\",\n  \"price\":21.00\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6cdd313d-efc9-4e72-b373-aa0c80105974",
+            "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
+            "containerId": "166e1a82-9b5a-4e3d-b534-d4867114f19e",
+            "name": "LIST ORDERS",
+            "url": "http://localhost:3333/orders",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-06-02T01:52:32.635Z",
+            "modified": "2023-06-02T01:53:43.084Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "061e40ff-1f99-4485-a673-ac93b4edd81a",
+            "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
+            "containerId": "166e1a82-9b5a-4e3d-b534-d4867114f19e",
+            "name": "CREATE ORDER",
+            "url": "http://localhost:3333/order",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-06-02T01:53:48.025Z",
+            "modified": "2023-06-02T01:57:25.598Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"customer\": {\n    \"id\": \"9c388ac0-613a-4c0d-aab5-bf23e077f528\",\n    \"name\": \"Test\",\n    \"cpf\": 11111111111\n  },\n  \"products\": [\n    {\n      \"id\": \"9c388ac0-613a-4c0d-aab5-bf23e077f528\",\n      \"name\": \"Test\",\n      \"price\": 21.2\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f0612447-62cd-46f4-9a2a-2cb9caf42900",
+            "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
+            "containerId": "e7cdf525-ece7-4454-bba8-0405e65cdca0",
+            "name": "LIST CUSTOMERS",
+            "url": "http://localhost:3333/customers",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-06-02T03:09:54.141Z",
+            "modified": "2023-06-02T03:10:12.017Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "75dd4bd2-718c-4c6c-b2a9-11c1ac8390f5",
+            "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
+            "containerId": "e7cdf525-ece7-4454-bba8-0405e65cdca0",
+            "name": "CREATE CUSTOMER",
+            "url": "http://localhost:3333/customer",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-06-02T03:10:19.575Z",
+            "modified": "2023-06-02T03:16:10.409Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Mousepad\",\n  \"email\": \"test@mail.com\",\n  \"cpf\": \"11111111111\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9d63f56e-4672-45d0-8675-471f561795d2",
+            "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
+            "containerId": "e7cdf525-ece7-4454-bba8-0405e65cdca0",
+            "name": "GET CUSTOMER",
+            "url": "http://localhost:3333/customer/85690a4e-387b-4211-892a-c8e684ec4d44",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-06-02T03:16:51.455Z",
+            "modified": "2023-06-02T03:17:05.974Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bf7c6ee4-6145-4aaa-8e2c-98d356a3b271",
+            "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
+            "containerId": "e7cdf525-ece7-4454-bba8-0405e65cdca0",
+            "name": "DELETE CUSTOMER",
+            "url": "http://localhost:3333/customer/85690a4e-387b-4211-892a-c8e684ec4d44",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-06-02T03:17:16.466Z",
+            "modified": "2023-06-02T03:17:32.382Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a5ce2dc9-d435-491c-a119-3859d624f601",
+            "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
+            "containerId": "166e1a82-9b5a-4e3d-b534-d4867114f19e",
+            "name": "GET ORDER",
+            "url": "",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-06-02T03:18:20.768Z",
+            "modified": "2023-06-02T03:18:20.768Z",
+            "headers": []
+        },
+        {
+            "_id": "7cd556ac-2e62-47a3-a8e0-4cf637ca6f4f",
+            "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
+            "containerId": "166e1a82-9b5a-4e3d-b534-d4867114f19e",
+            "name": "DELETE ORDER",
+            "url": "http://localhost:3333/order/9c388ac0-613a-4c0d-aab5-bf23e077f528",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-06-02T03:18:45.693Z",
+            "modified": "2023-06-02T03:18:53.282Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
