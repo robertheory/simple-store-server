@@ -1,29 +1,29 @@
 {
     "client": "Thunder Client",
     "collectionName": "simple-store",
-    "dateExported": "2023-06-02T03:18:59.632Z",
+    "dateExported": "2023-06-03T16:42:46.478Z",
     "version": "1.1",
     "folders": [
         {
-            "_id": "51fd8b67-2822-4b42-a370-295badfd27e4",
-            "name": "PRODUCTS",
+            "_id": "e7cdf525-ece7-4454-bba8-0405e65cdca0",
+            "name": "CUSTOMERS",
             "containerId": "",
-            "created": "2023-06-02T00:48:31.658Z",
-            "sortNum": 10000
+            "created": "2023-06-02T03:09:47.293Z",
+            "sortNum": 5000
         },
         {
             "_id": "166e1a82-9b5a-4e3d-b534-d4867114f19e",
             "name": "ORDER",
             "containerId": "",
             "created": "2023-06-02T01:52:23.147Z",
-            "sortNum": 20000
+            "sortNum": 7500
         },
         {
-            "_id": "e7cdf525-ece7-4454-bba8-0405e65cdca0",
-            "name": "CUSTOMERS",
+            "_id": "51fd8b67-2822-4b42-a370-295badfd27e4",
+            "name": "PRODUCTS",
             "containerId": "",
-            "created": "2023-06-02T03:09:47.293Z",
-            "sortNum": 30000
+            "created": "2023-06-02T00:48:31.658Z",
+            "sortNum": 10000
         }
     ],
     "requests": [
@@ -32,11 +32,11 @@
             "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
             "containerId": "51fd8b67-2822-4b42-a370-295badfd27e4",
             "name": "LIST PRODUCTS",
-            "url": "http://localhost:3333/products",
+            "url": "http://localhost:3335/products",
             "method": "GET",
             "sortNum": 10000,
             "created": "2023-06-02T00:38:49.670Z",
-            "modified": "2023-06-02T00:48:35.061Z",
+            "modified": "2023-06-03T15:26:00.664Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -46,16 +46,16 @@
             "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
             "containerId": "51fd8b67-2822-4b42-a370-295badfd27e4",
             "name": "CREATE PRODUCT",
-            "url": "http://localhost:3333/product",
+            "url": "http://localhost:3335/product",
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-06-02T00:40:06.820Z",
-            "modified": "2023-06-02T00:48:35.877Z",
+            "modified": "2023-06-03T15:38:08.933Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"Mousepad\",\n  \"price\":21.00\n}",
+                "raw": "{\n  \"name\": \"Monitor Ultrawide 43\",\n  \"description\": \"Great Monitor\",\n  \"price\": 3400.00,\n  \"quantity\": 500\n}",
                 "form": []
             },
             "tests": []
@@ -65,11 +65,11 @@
             "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
             "containerId": "51fd8b67-2822-4b42-a370-295badfd27e4",
             "name": "GET PRODUCT",
-            "url": "http://localhost:3333/product/d2fdcc57-6dd6-4209-9ce2-60177c294fd1",
+            "url": "http://localhost:3335/product/d2fdcc57-6dd6-4209-9ce2-60177c294fd1",
             "method": "GET",
             "sortNum": 30000,
             "created": "2023-06-02T00:42:29.392Z",
-            "modified": "2023-06-02T00:48:36.546Z",
+            "modified": "2023-06-03T15:26:05.817Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -79,16 +79,16 @@
             "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
             "containerId": "51fd8b67-2822-4b42-a370-295badfd27e4",
             "name": "UPDATE PRODUCT",
-            "url": "http://localhost:3333/product/d2fdcc57-6dd6-4209-9ce2-60177c294fd1",
+            "url": "http://localhost:3335/product/d6cdc798-1dee-4567-aa68-916494116098",
             "method": "PUT",
             "sortNum": 40000,
             "created": "2023-06-02T00:46:48.944Z",
-            "modified": "2023-06-02T00:48:37.516Z",
+            "modified": "2023-06-03T16:14:21.395Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"Mousepad 2\",\n  \"price\":21.00\n}",
+                "raw": "{\n  \"name\": \"Mousepad 2\",\n  \"description\": \"Great mousepad\",\n  \"price\": 21.00,\n  \"quantity\": 500\n}",
                 "form": []
             },
             "tests": []
@@ -98,11 +98,11 @@
             "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
             "containerId": "166e1a82-9b5a-4e3d-b534-d4867114f19e",
             "name": "LIST ORDERS",
-            "url": "http://localhost:3333/orders",
+            "url": "http://localhost:3334/orders",
             "method": "GET",
             "sortNum": 50000,
             "created": "2023-06-02T01:52:32.635Z",
-            "modified": "2023-06-02T01:53:43.084Z",
+            "modified": "2023-06-03T15:25:18.446Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -112,11 +112,11 @@
             "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
             "containerId": "166e1a82-9b5a-4e3d-b534-d4867114f19e",
             "name": "CREATE ORDER",
-            "url": "http://localhost:3333/order",
+            "url": "http://localhost:3334/order",
             "method": "POST",
             "sortNum": 60000,
             "created": "2023-06-02T01:53:48.025Z",
-            "modified": "2023-06-02T01:57:25.598Z",
+            "modified": "2023-06-03T15:25:16.969Z",
             "headers": [],
             "params": [],
             "body": {
@@ -149,12 +149,12 @@
             "method": "POST",
             "sortNum": 80000,
             "created": "2023-06-02T03:10:19.575Z",
-            "modified": "2023-06-02T03:16:10.409Z",
+            "modified": "2023-06-03T16:26:48.850Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"Mousepad\",\n  \"email\": \"test@mail.com\",\n  \"cpf\": \"11111111111\"\n}",
+                "raw": "{\n  \"name\":\"John Doe\",\n  \"email\": \"test5111@mail.com\",\n  \"cpf\": \"111111111111511\"\n}",
                 "form": []
             },
             "tests": []
@@ -163,14 +163,19 @@
             "_id": "9d63f56e-4672-45d0-8675-471f561795d2",
             "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
             "containerId": "e7cdf525-ece7-4454-bba8-0405e65cdca0",
-            "name": "GET CUSTOMER",
-            "url": "http://localhost:3333/customer/85690a4e-387b-4211-892a-c8e684ec4d44",
-            "method": "GET",
+            "name": "UPDATE CUSTOMER",
+            "url": "http://localhost:3333/customer/2d69aaa5-a4c8-48c0-ac11-b6c44136f30f",
+            "method": "PUT",
             "sortNum": 90000,
             "created": "2023-06-02T03:16:51.455Z",
-            "modified": "2023-06-02T03:17:05.974Z",
+            "modified": "2023-06-03T16:05:42.550Z",
             "headers": [],
             "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"John Doe\",\n  \"email\": \"test51@mail.com\",\n  \"cpf\": \"1111111111115\"\n}",
+                "form": []
+            },
             "tests": []
         },
         {
@@ -204,11 +209,11 @@
             "colId": "071fdaea-7b05-495c-a55c-59bcb3de32e5",
             "containerId": "166e1a82-9b5a-4e3d-b534-d4867114f19e",
             "name": "DELETE ORDER",
-            "url": "http://localhost:3333/order/9c388ac0-613a-4c0d-aab5-bf23e077f528",
+            "url": "http://localhost:3334/order/9c388ac0-613a-4c0d-aab5-bf23e077f528",
             "method": "DELETE",
             "sortNum": 120000,
             "created": "2023-06-02T03:18:45.693Z",
-            "modified": "2023-06-02T03:18:53.282Z",
+            "modified": "2023-06-03T15:25:52.267Z",
             "headers": [],
             "params": [],
             "tests": []

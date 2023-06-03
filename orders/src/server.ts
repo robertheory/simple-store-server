@@ -1,6 +1,7 @@
 import fastify from 'fastify';
 import { ordersRoutes } from './routes/orders';
 import cors from '@fastify/cors';
+import './lib/kafka/consumers';
 
 const app = fastify();
 
@@ -12,6 +13,6 @@ app.register(cors, {
 
 app
 	.listen({
-		port: 3333,
+		port: Number(process.env.PORT),
 	})
-	.then(() => console.log('Listening on http://localhost:3333'));
+	.then(() => console.log(`Listening on http://localhost:${process.env.PORT}`));

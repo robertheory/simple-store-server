@@ -12,13 +12,14 @@
 		"start": "node build/server.js",
 		"generate": "npx prisma generate",
 		"migrate": "npx prisma migrate dev",
-		"lint": "eslint src --ext .ts --fix"
+		"lint": "eslint src --ext .ts --fix",
+		"studio": "npx prisma studio --port 5555"
 	},
 	"dependencies": {
 		"@fastify/cors": "^8.3.0",
 		"@prisma/client": "4.15.0",
 		"fastify": "^4.17.0",
-		"kafkajs": "^2.2.4",
+		"kafkajs": "2.2.4",
 		"zod": "^3.21.4"
 	},
 	"devDependencies": {
@@ -27,8 +28,8 @@
 		"dotenv": "^16.0.3",
 		"eslint": "^8.40.0",
 		"prisma": "^4.14.0",
+		"tsup": "6.7.0",
 		"tsx": "^3.12.7",
-		"typescript": "^5.0.4",
-		"tsup": "6.7.0"
+		"typescript": "^5.0.4"
 	}
 }

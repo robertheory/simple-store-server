@@ -4,9 +4,13 @@
 	"license": "MIT",
 	"main": "src/server.ts",
 	"scripts": {
-		"build": "tsc -p .",
 		"dev": "tsx watch src/server.ts",
-		"lint": "eslint src --ext .ts --fix"
+		"build": "tsup src --out-dir build",
+		"start": "node build/server.js",
+		"generate": "npx prisma generate",
+		"migrate": "npx prisma migrate dev",
+		"lint": "eslint src --ext .ts --fix",
+		"studio": "npx prisma studio --port 5557"
 	},
 	"dependencies": {
 		"@fastify/cors": "^8.3.0",
@@ -22,6 +26,7 @@
 		"eslint": "^8.40.0",
 		"prisma": "^4.14.0",
 		"tsx": "^3.12.7",
+		"tsup": "6.7.0",
 		"typescript": "^5.0.4"
 	}
 }

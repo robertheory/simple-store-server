@@ -13,7 +13,7 @@ datasource db {
 model Customer {
   id    String  @id @default(uuid())
   name  String
-  cpf   Int
+  cpf   String
   Order Order[]
 }
 
