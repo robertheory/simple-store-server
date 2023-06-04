@@ -42,10 +42,14 @@ Existe um script chamado `setup.sh` que automatiza a preparação do ambiente. E
 ./setup.sh
 ```
 
-## Comandos de execução
+## Execução contínua dos projetos
 
-- Para executar cada projeto, utilize o comando ` yarn dev` na respectiva pasta do projeto.
-- Por exemplo, para executar o projeto customer, navegue para a pasta customer e execute o comando ` yarn dev` .
+1. Verifique se todos os requisitos estão instalados.
+2. Execute o script `start.sh` na pasta raiz do repositório.
+3. Os projetos serão iniciados simultaneamente em segundo plano.
+4. Para interromper a execução dos projetos, pressione "q" e Enter.
 
-- Para executar o Prisma Studio e visualizar/editar o banco de dados, utilize o comando ` yarn studio` na pasta do projeto correspondente.
-- Por exemplo, para executar o Prisma Studio do projeto orders, navegue para a pasta orders e execute o comando ` yarn studio` .
+## Observação
+
+- O arquivo `start.sh` é um script que verifica as dependências, os containers do Docker Compose e inicia os projetos simultaneamente em segundo plano.
+- O script permanecerá em execução até que seja interrompido pelo usuário.
